@@ -1,0 +1,6 @@
+[{"value" : "/img/icon/icon_ammonia.png", "text" : "icon_ammonia"},
+{"value" : "/img/icon/icon_heat-exchanger.png", "text" : "icon_heat-exchanger"},
+{"value" : "/img/icon/icon_humidity.png", "text" : "icon_humidity"},
+{"value" : "/img/icon/icon_temperature.png", "text" : "icon_temperature"},
+{"value" : "/img/icon/icon_fan.png", "text" : "icon_temperature"},
+{"value" : "/img/icon/icon_lamp.png", "text" : "icon_temperature"}]

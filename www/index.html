@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    .loading_wrap {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #FFF;
+      display: block;
+      position: absolute;
+    }
+
+    .loader_logo {
+      display: none;
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      left: calc(50% - 50px);
+      top: 38%;
+    }
+
+    .loader_logo img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .loading {
+
+      border: 3px solid var(--primary-light);
+      position: absolute;
+      left: calc(50% - 35px);
+      top: 50%;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border-top-color: #19733d;
+      animation: loader 1s ease-in-out infinite;
+      -webkit-animation: loader 1s ease-in-out infinite;
+    }
+
+    @keyframes loader {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes loader {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+  </style>
+  <title>동애등에 스마트팜 통합관제시스템</title>
+    <link href="/css/chunk-092ce566.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-1b480630.5c0599e3.css" rel="prefetch">
+    <link href="/css/chunk-1b96f18f.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-223f21f4.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-28af6395.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-30fc4127.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-34869848.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-3c00e3a9.18334d5e.css" rel="prefetch">
+    <link href="/css/chunk-3c326c56.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-3c92e958.2155418f.css" rel="prefetch">
+    <link href="/css/chunk-427c8052.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-501c996e.8a135aa2.css" rel="prefetch">
+    <link href="/css/chunk-512df946.49be2861.css" rel="prefetch">
+    <link href="/css/chunk-51aed803.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-54199674.6a4dbf8d.css" rel="prefetch">
+    <link href="/css/chunk-5ad06632.2155418f.css" rel="prefetch">
+    <link href="/css/chunk-5afcdcd2.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-5c9dffc0.22b1eecb.css" rel="prefetch">
+    <link href="/css/chunk-5daa9bea.3c94bfcd.css" rel="prefetch">
+    <link href="/css/chunk-61bdb18e.3c94bfcd.css" rel="prefetch">
+    <link href="/css/chunk-61d6b298.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-6b72e5e3.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-78eabc9a.5c0599e3.css" rel="prefetch">
+    <link href="/css/chunk-7ac72876.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-7c0d901e.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-7c889175.a3b7587f.css" rel="prefetch">
+    <link href="/css/chunk-801e91f2.8a135aa2.css" rel="prefetch">
+    <link href="/css/chunk-87f18f44.8506ed5e.css" rel="prefetch">
+    <link href="/css/chunk-88d0b0e4.cc8ab640.css" rel="prefetch">
+    <link href="/css/chunk-9554b89a.3c94bfcd.css" rel="prefetch">
+    <link href="/css/chunk-9bf4ce6a.6a4dbf8d.css" rel="prefetch">
+    <link href="/css/chunk-9c387f66.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-9c4f55e4.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-9e686678.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-b05975aa.f7bfec9c.css" rel="prefetch">
+    <link href="/css/chunk-c31d2166.3f3b0a4e.css" rel="prefetch">
+    <link href="/css/chunk-dea707aa.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-e9cfcdf4.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-ea0f0110.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-f7c4b00c.1631e755.css" rel="prefetch">
+    <link href="/css/chunk-f8bf04b2.e9c72522.css" rel="prefetch">
+    <link href="/css/chunk-fa749bdc.f6def697.css" rel="prefetch">
+    <link href="/css/chunk-fd80fd52.1631e755.css" rel="prefetch">
+    <link href="/js/chunk-08f1188e.4f6001bc.js" rel="prefetch">
+    <link href="/js/chunk-092ce566.18a81fb6.js" rel="prefetch">
+    <link href="/js/chunk-0f97acce.8e9f7d25.js" rel="prefetch">
+    <link href="/js/chunk-12e76cc3.5eab20c5.js" rel="prefetch">
+    <link href="/js/chunk-132bf976.6a5bede4.js" rel="prefetch">
+    <link href="/js/chunk-19e10a7a.2f772175.js" rel="prefetch">
+    <link href="/js/chunk-1b480630.883f123b.js" rel="prefetch">
+    <link href="/js/chunk-1b96f18f.a951103a.js" rel="prefetch">
+    <link href="/js/chunk-217c15ed.12349bf4.js" rel="prefetch">
+    <link href="/js/chunk-223f21f4.5bc84743.js" rel="prefetch">
+    <link href="/js/chunk-258a9476.a79ca15f.js" rel="prefetch">
+    <link href="/js/chunk-28af6395.c7e4a878.js" rel="prefetch">
+    <link href="/js/chunk-2d0a443c.cefb5a97.js" rel="prefetch">
+    <link href="/js/chunk-2d0abe28.2c7d4482.js" rel="prefetch">
+    <link href="/js/chunk-2d0ac42c.9c2711b0.js" rel="prefetch">
+    <link href="/js/chunk-2d0af108.35af1a49.js" rel="prefetch">
+    <link href="/js/chunk-2d0b324e.7af0cb10.js" rel="prefetch">
+    <link href="/js/chunk-2d0c4259.6ff36d23.js" rel="prefetch">
+    <link href="/js/chunk-2d0c46e0.6cb84127.js" rel="prefetch">
+    <link href="/js/chunk-2d0c54fe.a3aac1f4.js" rel="prefetch">
+    <link href="/js/chunk-2d0c93d5.db45d425.js" rel="prefetch">
+    <link href="/js/chunk-2d0c970a.191a30ab.js" rel="prefetch">
+    <link href="/js/chunk-2d0d6923.0f2ece91.js" rel="prefetch">
+    <link href="/js/chunk-2d0d9f52.7ac14cc4.js" rel="prefetch">
+    <link href="/js/chunk-2d0daf06.b0b2936d.js" rel="prefetch">
+    <link href="/js/chunk-2d0db4a4.1ff6238a.js" rel="prefetch">
+    <link href="/js/chunk-2d0e887e.be9df7ff.js" rel="prefetch">
+    <link href="/js/chunk-2d0e99a4.41be2b3c.js" rel="prefetch">
+    <link href="/js/chunk-2d0f083e.3ac7696a.js" rel="prefetch">
+    <link href="/js/chunk-2d0f1004.1f7dd617.js" rel="prefetch">
+    <link href="/js/chunk-2d213ec8.a5048932.js" rel="prefetch">
+    <link href="/js/chunk-2d215ca3.7a577c1f.js" rel="prefetch">
+    <link href="/js/chunk-2d217b18.4382f64f.js" rel="prefetch">
+    <link href="/js/chunk-2d22d779.f8dfe30a.js" rel="prefetch">
+    <link href="/js/chunk-2d2300f2.23a87a9d.js" rel="prefetch">
+    <link href="/js/chunk-30fc4127.92c77edc.js" rel="prefetch">
+    <link href="/js/chunk-34869848.77b56fe6.js" rel="prefetch">
+    <link href="/js/chunk-37fe13e7.ff3dcea5.js" rel="prefetch">
+    <link href="/js/chunk-3c00e3a9.33ccf110.js" rel="prefetch">
+    <link href="/js/chunk-3c326c56.bec6387d.js" rel="prefetch">
+    <link href="/js/chunk-3c92e958.8b295206.js" rel="prefetch">
+    <link href="/js/chunk-3ea8ce7d.1bc8744a.js" rel="prefetch">
+    <link href="/js/chunk-427c8052.d1482c4d.js" rel="prefetch">
+    <link href="/js/chunk-4449ed04.4b08f0ba.js" rel="prefetch">
+    <link href="/js/chunk-45c32746.bde8736e.js" rel="prefetch">
+    <link href="/js/chunk-4a4e7052.e9b486dc.js" rel="prefetch">
+    <link href="/js/chunk-501c996e.054c48f2.js" rel="prefetch">
+    <link href="/js/chunk-512df946.da6fae3a.js" rel="prefetch">
+    <link href="/js/chunk-51aed803.72c2d27f.js" rel="prefetch">
+    <link href="/js/chunk-54199674.fe11ea9d.js" rel="prefetch">
+    <link href="/js/chunk-5ad06632.043bfd18.js" rel="prefetch">
+    <link href="/js/chunk-5afcdcd2.65c7c4ef.js" rel="prefetch">
+    <link href="/js/chunk-5c9dffc0.4eeb9718.js" rel="prefetch">
+    <link href="/js/chunk-5daa9bea.175c876f.js" rel="prefetch">
+    <link href="/js/chunk-61bdb18e.2a706998.js" rel="prefetch">
+    <link href="/js/chunk-61d6b298.0184c2ef.js" rel="prefetch">
+    <link href="/js/chunk-6b72e5e3.fcd6917c.js" rel="prefetch">
+    <link href="/js/chunk-6bb7cfc0.01173565.js" rel="prefetch">
+    <link href="/js/chunk-78eabc9a.bfcbcbb6.js" rel="prefetch">
+    <link href="/js/chunk-7ac72876.e5db80ba.js" rel="prefetch">
+    <link href="/js/chunk-7c0d901e.f85391f0.js" rel="prefetch">
+    <link href="/js/chunk-7c889175.fd0f31bb.js" rel="prefetch">
+    <link href="/js/chunk-7eef2cd4.5e7acc59.js" rel="prefetch">
+    <link href="/js/chunk-801e91f2.28d312ab.js" rel="prefetch">
+    <link href="/js/chunk-807b534a.6edcc35c.js" rel="prefetch">
+    <link href="/js/chunk-87f18f44.cd465bf9.js" rel="prefetch">
+    <link href="/js/chunk-88d0b0e4.19357873.js" rel="prefetch">
+    <link href="/js/chunk-8d9b5484.e996c678.js" rel="prefetch">
+    <link href="/js/chunk-937688ee.4bc2848a.js" rel="prefetch">
+    <link href="/js/chunk-9554b89a.fafa27ca.js" rel="prefetch">
+    <link href="/js/chunk-9bf4ce6a.417911f0.js" rel="prefetch">
+    <link href="/js/chunk-9c387f66.fbf2f9c8.js" rel="prefetch">
+    <link href="/js/chunk-9c4f55e4.4eef2cc0.js" rel="prefetch">
+    <link href="/js/chunk-9e686678.4ce92a5c.js" rel="prefetch">
+    <link href="/js/chunk-b05975aa.3cdc52aa.js" rel="prefetch">
+    <link href="/js/chunk-b7f300fc.747ad5da.js" rel="prefetch">
+    <link href="/js/chunk-bf681066.b27ddcf8.js" rel="prefetch">
+    <link href="/js/chunk-c31d2166.c6493d20.js" rel="prefetch">
+    <link href="/js/chunk-c6fef444.8bc1265c.js" rel="prefetch">
+    <link href="/js/chunk-cdaff39e.84ad559c.js" rel="prefetch">
+    <link href="/js/chunk-d0dcad44.89e4d7d7.js" rel="prefetch">
+    <link href="/js/chunk-dea707aa.6211bd8b.js" rel="prefetch">
+    <link href="/js/chunk-e4f25f30.f84aac72.js" rel="prefetch">
+    <link href="/js/chunk-e77835b2.a60f5368.js" rel="prefetch">
+    <link href="/js/chunk-e875f018.016ec1b9.js" rel="prefetch">
+    <link href="/js/chunk-e9cfcdf4.23376d07.js" rel="prefetch">
+    <link href="/js/chunk-ea0f0110.81fb2930.js" rel="prefetch">
+    <link href="/js/chunk-f0909798.e3815923.js" rel="prefetch">
+    <link href="/js/chunk-f7c4b00c.239b9949.js" rel="prefetch">
+    <link href="/js/chunk-f8bf04b2.2d3393a5.js" rel="prefetch">
+    <link href="/js/chunk-fa749bdc.4bfa1b41.js" rel="prefetch">
+    <link href="/js/chunk-fd80fd52.06bb03d5.js" rel="prefetch">
+    <link href="/js/chunk-ffaa36ec.ee6a1e33.js" rel="prefetch">
+    <link href="/css/chunk-vendors.0f78028a.css" rel="preload" as="style">
+    <link href="/css/index.91a6e6d5.css" rel="preload" as="style">
+    <link href="/js/chunk-vendors.8875f6b9.js" rel="preload" as="script">
+    <link href="/js/index.f8ad51ab.js" rel="preload" as="script">
+    <link href="/css/chunk-vendors.0f78028a.css" rel="stylesheet">
+    <link href="/css/index.91a6e6d5.css" rel="stylesheet">
+</head>
+
+<body onload="onLoad()">
+  <div class="loading_wrap" id="loading_wrap">
+    <div class="loader_logo"><img src="/img/logo.jpeg" class="" alt="logo"></div>
+    <div class="loading"></div>
+  </div>
+  <div id="app"></div>
+  <script src="/js/chunk-vendors.8875f6b9.js"></script>
+  <script src="/js/index.f8ad51ab.js"></script>
+  <script src="cordova.js"></script>
+  <script>
+    var g_token = null;
+
+    function onLoad() {
+        document.addEventListener("deviceready", setupListeners, false);
+    	document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    function trySomeTimes(asyncFunc, onSuccess, onFailure, customTries) {
+        var tries = typeof customTries === "undefined" ? 100 : customTries;
+        var interval = setTimeout(function () {
+            if (typeof asyncFunc !== "function") {
+            onSuccess("Unavailable");
+            return;
+            }
+            asyncFunc()
+            .then(function (result) {
+                if ((result !== null && result !== "") || tries < 0) {
+                onSuccess(result);
+                } else {
+                trySomeTimes(asyncFunc, onSuccess, onFailure, tries - 1);
+                }
+            })
+            .catch(function (e) {
+                clearInterval(interval);
+                onFailure(e);
+            });
+        }, 100);
+    }
+
+    function logHasPermissionOnStart() {
+        FCM.hasPermission().then(function (hasIt) {
+            console.log("Started with permission: " + JSON.stringify(hasIt));
+        });
+    }
+
+    function setupOnTokenRefresh() {
+        FCM.eventTarget.addEventListener(
+            "tokenRefresh",
+            function (data) {
+                console.log("FCM Token refreshed to: " + data.detail);
+            },
+            false
+        );
+    }
+
+    function logFCMToken() {
+        trySomeTimes(
+            FCM.getToken,
+            function (token) {
+                g_token = token;
+                window.localStorage.setItem("fcmtoken", token);
+                console.log("Started listening FCM as: " + token);
+            },
+            function (error) {
+                console.error("Error on listening for FCM token: " + error);
+            }
+        );
+    }
+
+    function setupOnNotification() {
+        FCM.eventTarget.addEventListener(
+            "notification",
+            function (data) {
+                console.log( JSON.stringify(data.detail, null, 2));
+            },
+            false
+        );
+        FCM.getInitialPushPayload()
+            .then((payload) => {
+                console.log("Initial Payload :" + JSON.stringify(payload, null, 2));
+            })
+            .catch((error) => {
+                console.log("Initial Payload Error:" + JSON.stringify(error, null, 2));
+        });
+    }
+
+    function waitForPermission(callback) {
+        FCM.requestPushPermission()
+            .then(function (didIt) {
+            if (didIt) {
+                callback();
+            } else {
+                console.log("Push permission was not given to this application");
+            }
+        })
+        .catch(function (error) {
+            console.log("Error on checking permission: " + error);
+        });
+    }
+
+    function setupListeners() {
+        logHasPermissionOnStart();
+        waitForPermission(function () {
+            FCM.createNotificationChannel({
+                id: "sound_alert6",
+                name: "Sound Alert6",
+                // description: "Useless",
+                importance: "high",
+                // visibility: "public",
+                sound: "elet_mp3",
+                lights: true,
+                vibration: true,
+            });
+            logFCMToken();
+            //logAPNSToken();
+            setupOnTokenRefresh();
+            setupOnNotification();
+            //setupClearAllNotificationsButton();
+        });
+    }
+
+    function onDeviceReady() {
+        console.log("디바이스 준비 완료")
+        // set to either landscape
+        //screen.orientation.lock('landscape');
+
+        // allow user rotate
+        //screen.orientation.unlock();
+
+        // access current orientation
+        //console.log('Orientation is ' + screen.orientation.type);
+
+        //window.open = cordova.InAppBrowser.open;
+		//window.open(encodeURI('https://localhost/'), '_blank', 'location=no');
+        //httpd = ( cordova && cordova.plugins && cordova.plugins.CorHttpd ) ? cordova.plugins.CorHttpd : null;
+
+        //startServer("htdocs");
+    }
+    function onBackKeyDown() {
+    }
+    function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener("backbutton", onBackKeyDown);
+         iabRef.removeEventListener('exit', iabClose);
+         navigator.app.exitApp();
+    }
+    </script>
+</body>
+
+</html>

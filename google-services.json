@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910120969366",
+    "project_id": "foodycube-1a11e",
+    "storage_bucket": "foodycube-1a11e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910120969366:android:ca0f9ef13cf375e5764eb7",
+        "android_client_info": {
+          "package_name": "com.hemicolon.foodycube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910120969366-nsbufatftvmdbo1k9r2e77a7n4sk758l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiBg3iDvCovVuSPVOFKZwb2v2FwjD-PNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910120969366-nsbufatftvmdbo1k9r2e77a7n4sk758l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

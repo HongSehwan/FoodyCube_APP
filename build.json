@@ -1,0 +1,20 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "debug.keystore",
+            "storePassword": "iot12345678",
+            "alias": "hemit",
+            "password": "iot12345678",
+            "keystoreType": "",
+            "packageType": "apk"
+        },
+        "release": {
+            "keystore": "release.keystore",
+            "storePassword": "iot12345678",
+            "alias": "hemit",
+            "password": "iot12345678",
+            "keystoreType": "",
+            "packageType": "apk"
+        }
+    }
+}
